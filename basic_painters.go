@@ -97,3 +97,27 @@ type BgWhite struct{}
 func (c *BgWhite) paint(value string) string {
 	return fmt.Sprintf("\033[47m%s\033[49m", value)
 }
+
+type Bold struct{}
+
+func (c *Bold) paint(value string) string {
+	return fmt.Sprintf("\033[1m%s\033[22m", value)
+}
+
+type Italic struct{}
+
+func (c *Italic) paint(value string) string {
+	return fmt.Sprintf("\033[3m%s\033[23m", value)
+}
+
+type Underline struct{}
+
+func (c *Underline) paint(value string) string {
+	return fmt.Sprintf("\033[4m%s\033[24m", value)
+}
+
+type Strikethrough struct{}
+
+func (c *Strikethrough) paint(value string) string {
+	return fmt.Sprintf("\033[9m%s\033[29m", value)
+}
