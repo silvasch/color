@@ -6,6 +6,7 @@ import (
 	"strings"
 )
 
+// Hex is a painter that applies a hex color to a string.
 type Hex struct {
 	Hex string
 }

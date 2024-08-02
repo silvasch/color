@@ -2,6 +2,7 @@ package color
 
 import "fmt"
 
+// RGB is a painter that applies a color to a string using red, green and blue channels.
 type RGB struct {
 	R uint8
 	G uint8
