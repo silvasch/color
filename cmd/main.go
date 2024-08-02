@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-	green := color.Hex{Hex: "ffffff"}
-	violet := color.New(&color.Blue{}, &color.Red{}, &green)
-	fmt.Printf("Hello, %s\n", violet.Apply("World"))
+	black := color.New(&color.Magenta{})
+	fmt.Printf("%s, Hello\n", black.Apply("World"))
 }

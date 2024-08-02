@@ -9,6 +9,5 @@ type RGB struct {
 }
 
 func (rgb *RGB) paint(value string) string {
-	rgb_string := fmt.Sprintf("%d, %d, %d", rgb.R, rgb.G, rgb.B)
-	return fmt.Sprintf("[%s] %s [/%s]", rgb_string, value, rgb_string)
+	return fmt.Sprintf("\033[38;2;%d;%d;%dm%s\033[0m", rgb.R, rgb.G, rgb.B, value)
 }
