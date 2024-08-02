@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	black := color.New(&color.Magenta{})
+	black := color.New(&color.Magenta{}, &color.BgGreen{})
 	fmt.Printf("%s, Hello\n", black.Apply("World"))
 }

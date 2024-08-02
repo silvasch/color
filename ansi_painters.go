@@ -49,3 +49,51 @@ type White struct{}
 func (c *White) paint(value string) string {
 	return fmt.Sprintf("\033[37m%s\033[39m", value)
 }
+
+type BgBlack struct{}
+
+func (c *BgBlack) paint(value string) string {
+	return fmt.Sprintf("\033[40m%s\033[49m", value)
+}
+
+type BgRed struct{}
+
+func (c *BgRed) paint(value string) string {
+	return fmt.Sprintf("\033[41m%s\033[49m", value)
+}
+
+type BgGreen struct{}
+
+func (c *BgGreen) paint(value string) string {
+	return fmt.Sprintf("\033[42m%s\033[49m", value)
+}
+
+type BgYellow struct{}
+
+func (c *BgYellow) paint(value string) string {
+	return fmt.Sprintf("\033[43m%s\033[49m", value)
+}
+
+type BgBlue struct{}
+
+func (c *BgBlue) paint(value string) string {
+	return fmt.Sprintf("\033[44m%s\033[49m", value)
+}
+
+type BgMagenta struct{}
+
+func (c *BgMagenta) paint(value string) string {
+	return fmt.Sprintf("\033[45m%s\033[49m", value)
+}
+
+type BgCyan struct{}
+
+func (c *BgCyan) paint(value string) string {
+	return fmt.Sprintf("\033[46m%s\033[49m", value)
+}
+
+type BgWhite struct{}
+
+func (c *BgWhite) paint(value string) string {
+	return fmt.Sprintf("\033[47m%s\033[49m", value)
+}
