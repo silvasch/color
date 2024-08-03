@@ -1,12 +1,10 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/silvasch/color"
 )
 
 func main() {
-	black := color.New(&color.Magenta{}, &color.BgGreen{}, &color.Strikethrough{})
-	fmt.Printf("%s, Hello\n", black.Apply("World"))
+	color := color.New(&color.Blue{}, &color.Underline{})
+	color.Printf("Hello, %s!\n", "World")
 }
